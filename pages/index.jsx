@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import { CardAbout } from '../src/components/CardAbout'
-import { Hello } from '/src/components/Hello'
-import { Menu } from '/src/components/Menu'
-import { Works } from '../src/components/Works'
+import Hello from '/src/components/Hello'
+import CardAbout from '../src/components/CardAbout'
+import Menu from '/src/components/Menu'
+import Works from '../src/components/Works'
 
 export default function Home() {
   return (
@@ -14,6 +14,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#000000" />
         <link rel="icon" href="/favicon.ico" />
+        {/* <link rel="canonical" href="https://www.ewertoncoutinho.com/" />
+        <link rel="alternate" href="https://www.ewertoncoutinho.com/br/" hrefLang="pt-BR"></link> */}
       </Head>
       <Menu></Menu>
       <Hello greeting="Hi, I'm" name="Ewerton" caption="I'm a UX/UI Designer and Full-stack Developer" margin></Hello>

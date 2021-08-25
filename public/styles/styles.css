@@ -6,7 +6,7 @@
 }
 
 /* 
-    Menu
+    menu
 */
 .menu{
   height: 2rem;
@@ -19,7 +19,7 @@
 }
 
 /* 
-    Hello
+    hello
 */
 .presentation{
   display: flex;
@@ -27,6 +27,9 @@
   justify-content: center;
   height: 32rem;
   width: 16rem;
+}
+.my-social ul{
+  display: flex;
 }
 .social{
   transition: fill 0.3s ease;
@@ -37,7 +40,7 @@
 }
 
 /* 
-    Card About
+    card about
 */
 
 .card-about{
@@ -75,16 +78,38 @@
 }
 
 /* 
-    Works
+    works
 */
 .works{
   display: flex;
-  height: 50rem;
+  height: 60rem;
+  flex-direction: column;
   background-color: var(--color-secondary-dark);
   margin-top: 60px;
 }
-.works h1{
+.my-works--text{
   text-align: center;
   color: var(--color-white);
   margin-top: var(--spacing-xxlarge);
 }
+.card-work{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 83.7%;
+  height: 460px;
+  background-color: var(--color-primary-dark);
+  border-radius: 1rem;
+}
+.card-work h1{
+  margin-top: var(--spacing-xlarge);
+  font-size: var(--font-size-medium);
+}
+.card-work ul {
+  display: flex;
+  color: #09D9FE;
+}
+
+/* 
+    contacts
+*/
