@@ -14,6 +14,9 @@
   align-items: center;
   justify-content: flex-end;
 }
+.icon-menu{
+  cursor: pointer;
+}
 
 /* 
     Hello
@@ -25,6 +28,13 @@
   height: 32rem;
   width: 16rem;
 }
+.social{
+  transition: fill 0.3s ease;
+
+}
+.social:hover{
+  fill: var(--color-primary);
+}
 
 /* 
     Card About
@@ -35,87 +45,46 @@
   width: 100%;
   height: 20.75rem;
   background-color: #111;
+  border-radius: 0.25rem;
 }
 .nice-to--text{
   position: absolute;
   top: var(--spacing-xsmall);
-
 }
 .about-me--text{
   position: absolute;
   color: var(--color-gray);
   bottom: var(--spacing-xsmall);
+  cursor: pointer;
+}
+.about-me--text svg{
+  transition: all 0.2s linear;
+}
+.about-me--text h2{
+  transition: color 0.2s linear;
+}
+.about-me--text:hover, .about-me--text:hover .icon-arrow{
+  fill: #a7a7a7;
+  color: #a7a7a7;
+}
+.about-me--text:hover .icon-arrow{
+  margin-left: 0.825rem;
 }
 .icon-arrow{
-  margin-left: var(--spacing-xxsmall);
+  margin-left: 0.525rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.storybook-button {
-    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    border: 0;
-    border-radius: 3em;
-    cursor: pointer;
-    display: inline-block;
-    line-height: 1;
-  }
-  .storybook-button--primary {
-    color: white;
-    background-color: #1ea7fd;
-  }
-  .storybook-button--secondary {
-    color: #333;
-    background-color: transparent;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
-  }
-  .storybook-button--small {
-    font-size: 12px;
-    padding: 10px 16px;
-  }
-  .storybook-button--medium {
-    font-size: 14px;
-    padding: 11px var(--spacing-small);
-  }
-  .storybook-button--large {
-    font-size: 16px;
-    padding: 12px 24px;
-  }
-  
+/* 
+    Works
+*/
+.works{
+  display: flex;
+  height: 50rem;
+  background-color: var(--color-secondary-dark);
+  margin-top: 60px;
+}
+.works h1{
+  text-align: center;
+  color: var(--color-white);
+  margin-top: var(--spacing-xxlarge);
+}
