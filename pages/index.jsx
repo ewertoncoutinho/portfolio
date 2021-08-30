@@ -18,7 +18,7 @@ export default function Home() {
         <link rel="alternate" href="https://www.ewertoncoutinho.com/br/" hrefLang="pt-BR"></link> */}
       </Head>
       <Menu></Menu>
-      <Hello greeting="Hi, I'm" name="Ewerton" caption="I'm a UX/UI Designer and Full-stack Developer" margin></Hello>
+      <Hello greeting="Hi, I'm" name="Ewerton" caption="I'm a UX/UI Designer and Full-stack Developer"></Hello>
       <CardAbout></CardAbout>
       <Works></Works>
     </>

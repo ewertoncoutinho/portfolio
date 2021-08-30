@@ -2,7 +2,7 @@ export default function CardAbout () {
     return(
         <section className={["container"].join(' ')}>
             <div className="card-about">
-                <div className="ml-20">
+                <div className="mx-20">
                     <header>
                         <h2 className="nice-to--text">
                             <div>Nice to&nbsp;</div>
