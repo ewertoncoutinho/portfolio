@@ -6,7 +6,8 @@ export default function Works () {
             <div className={["container"].join(' ')}>
                 <h1 className="my-works--text">Get to know<br></br>my works.</h1>
             </div>
-            <CardWork></CardWork>
+            <CardWork color="blue"></CardWork>
+            <CardWork top="top"></CardWork>
         </section>
     )
 }
