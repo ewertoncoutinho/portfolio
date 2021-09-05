@@ -9,8 +9,23 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head />
-        <body>
+        <Head>
+          <link
+            rel="preload"
+            href="/fonts/open-sans-600.woff2"
+            as="font"
+            crossOrigin=""
+            type="font/woff2"
+          />
+          <link
+            rel="preload"
+            href="/fonts/open-sans-700.woff2"
+            as="font"
+            crossOrigin=""
+            type="font/woff2"
+          />
+        </Head>
+        <body tabIndex="-1">
           <Main />
           <NextScript />
         </body>

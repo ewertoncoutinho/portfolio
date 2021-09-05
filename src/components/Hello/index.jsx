@@ -6,16 +6,16 @@ export default function Hello ({
 }) {
 
   return (
-    <div className={"container"}>
-      <div className={["presentation", "mx-20"].join(' ')}>
+    <div className="container">
+      <div className="presentation mx-20">
         <h1 className="m-0">
           <div>{ greeting }&nbsp;</div>
           <div>{ name }</div>
         </h1>
         <section>
-          <h2 className={["mt-20", "font-size-small", "color-gray"].join(" ")}>{ caption }</h2>
+          <h2 className="mt-20 font-size-small color-gray">{ caption }</h2>
         </section>
-        <nav className={["my-social", "mt-50", "font-zero"].join(" ")}>
+        <nav className="my-social mt-50 font-zero">
           <h2 className="font-zero">My social networks</h2>
           <ul>
             <li>

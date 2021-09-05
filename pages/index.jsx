@@ -23,6 +23,8 @@ export default function Home() {
       <CardAbout></CardAbout>
       <Works></Works>
       <Footer></Footer>
+      <hr/>
+      <br /><br /><br /><br /><br />
     </>
   )
 }

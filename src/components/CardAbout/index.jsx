@@ -1,6 +1,6 @@
 export default function CardAbout () {
     return(
-        <section className={["container"].join(' ')}>
+        <section className="container">
             <div className="card-about">
                 <div className="mx-20">
                     <header>
