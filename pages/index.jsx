@@ -3,6 +3,7 @@ import Hello from '/src/components/Hello'
 import CardAbout from '../src/components/CardAbout'
 import Menu from '/src/components/Menu'
 import Works from '../src/components/Works'
+import Footer from '../src/components/Footer'
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Hello greeting="Hi, I'm" name="Ewerton" caption="I'm a UX/UI Designer and Full-stack Developer"></Hello>
       <CardAbout></CardAbout>
       <Works></Works>
+      <Footer></Footer>
     </>
   )
 }
