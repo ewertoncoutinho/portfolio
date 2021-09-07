@@ -3,8 +3,8 @@ export default function CardWork(props){
         <article className={["container", "card-work", props.color].join(' ')}>
             <h1>Clone Instagram.</h1>
             <nav>
+                <h2 className="font-zero">Technologies</h2>
                 <ul>
-                    <h2 className="font-zero">Technologies</h2>
                     <li>React</li>
                     <li>Redux</li>
                 </ul>
