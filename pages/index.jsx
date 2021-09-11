@@ -4,6 +4,7 @@ import CardAbout from '../src/components/CardAbout'
 import Menu from '/src/components/Menu'
 import Works from '../src/components/Works'
 import Footer from '../src/components/Footer'
+import Language from '../src/components/Language'
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
       <Works></Works>
       <Footer></Footer>
       <hr/>
-      <br /><br /><br /><br /><br />
+      <Language></Language>
     </>
   )
 }
