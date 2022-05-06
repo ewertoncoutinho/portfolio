@@ -8,7 +8,7 @@ class MyDocument extends Document {
 
     render() {
         return (
-            <Html lang="en">
+            <Html lang="en" class="notranslate" translate="no">
                 <Head>
                     <link
                         rel="preload"
@@ -25,7 +25,7 @@ class MyDocument extends Document {
                         type="font/woff2"
                     />
                 </Head>
-                <body tabIndex="-1">
+                <body>
                     <Main />
                     <NextScript />
                 </body>

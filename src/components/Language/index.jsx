@@ -29,7 +29,7 @@ export default function Language(props) {
                     type="radio"
                     id="portugues"
                     onClick={() => {
-                        router.push('/pt', '/pt', { locale: 'pt' })
+                        router.push('/pt-BR', '/pt-BR', { locale: 'pt-BR' })
                     }}
                 />
                 <label htmlFor="portugues">Português</label>
