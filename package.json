@@ -1,25 +1,27 @@
 {
-  "name": "portfolio",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "plop": "plop --plopfile generators/plopfile.js"
-  },
-  "dependencies": {
-    "gsap": "^3.7.1",
-    "next": "12",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.15.0",
-    "babel-loader": "^8.2.2",
-    "eslint": "7.32.0",
-    "eslint-config-next": "11.1.0",
-    "plop": "^2.7.4"
-  }
+    "name": "portfolio",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "plop": "plop --plopfile generators/plopfile.js"
+    },
+    "dependencies": {
+        "gsap": "^3.7.1",
+        "next": "12",
+        "next-i18next": "^11.0.0",
+        "react": "^18.1.0",
+        "react-dom": "^18.1.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.15.0",
+        "babel-loader": "^8.2.2",
+        "eslint": "7.32.0",
+        "eslint-config-next": "11.1.0",
+        "plop": "^2.7.4",
+        "prettier": "2.6.2"
+    }
 }

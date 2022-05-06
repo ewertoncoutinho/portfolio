@@ -1,10 +1,37 @@
-export default function Language (){
+import React, { useEffect } from 'react'
+import { useRouter } from 'next/router'
+
+export default function Language(props) {
+    const router = useRouter()
+
+    useEffect(() => {
+        const location = window.location.pathname
+        if (location == '/') {
+            document.getElementById('english').checked = true
+        } else {
+            document.getElementById('portugues').checked = true
+        }
+    })
+
     return (
         <div className="container">
             <div className="mt-40 ml-20 mb-80">
-                <input defaultChecked type="radio" name="language" id="english" value="english"/>
+                <input
+                    type="radio"
+                    id="english"
+                    onClick={() => {
+                        router.push('/', '/', { locale: 'en' })
+                    }}
+                />
                 <label htmlFor="english">English</label>
-                <input className="ml-20" type="radio" name="language" id="portugues" value="portugues"/>
+                <input
+                    className="ml-20"
+                    type="radio"
+                    id="portugues"
+                    onClick={() => {
+                        router.push('/pt', '/pt', { locale: 'pt' })
+                    }}
+                />
                 <label htmlFor="portugues">Português</label>
             </div>
         </div>

@@ -1,10 +1,10 @@
-import CardWork from "../CardWork"
+import CardWork from '../CardWork'
 
-export default function Works () {
-    return(
-        <section className={["works"].join(' ')}>
-            <div className={["container"].join(' ')}>
-                <h1 className="my-works--text">Get to know<br></br>my works.</h1>
+export default function Works({ works }) {
+    return (
+        <section className={['works'].join(' ')}>
+            <div className={['container'].join(' ')}>
+                <h1 className="my-works--text">{works}</h1>
             </div>
             <CardWork color="blue"></CardWork>
             <CardWork top="top"></CardWork>
