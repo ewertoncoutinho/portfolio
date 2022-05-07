@@ -22,7 +22,7 @@ export default function Language(props) {
                         type="radio"
                         id="english"
                         onClick={() => {
-                            router.push('/', '/', { locale: 'en' })
+                            router.push('/', '/', { locale: 'en-US' })
                         }}
                     />
                     <label htmlFor="english">English</label>

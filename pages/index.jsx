@@ -6,7 +6,6 @@ import CardAbout from '../src/components/CardAbout'
 import Menu from '/src/components/Menu'
 import Works from '../src/components/Works'
 import Footer from '../src/components/Footer'
-import Language from '../src/components/Language'
 
 export async function getStaticProps({ locale }) {
     return {
@@ -46,7 +45,6 @@ export default function Home() {
             ></CardAbout>
             <Works works={t('home:works')}></Works>
             <Footer touch={t('home:touch')}></Footer>
-            <Language></Language>
         </>
     )
 }

@@ -1,55 +1,17 @@
+import Copy from '../Copy'
+import Language from '../Language'
+import Touch from '../Touch'
+
 export default function Footer({ touch }) {
     return (
-        <footer className="container contacts font-size-medium">
-            <article>
-                <h1 className="mb-40">{touch}</h1>
-                <nav>
-                    <h2 className="font-zero">Contacts</h2>
-                    <ul>
-                        <li>
-                            <a
-                                aria-label="Email"
-                                href="mailto:contato@ewertoncoutinho.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                E-mail
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                aria-label="Github"
-                                href="https://github.com/ewertoncoutinho"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Github
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                aria-label="Twitter"
-                                href="https://twitter.com/ewertoncoutinho"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Twitter
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                aria-label="Linkedin"
-                                href="https://www.linkedin.com/in/ewertoncoutinho"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                LinkedIn
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <p className="copy color-gray">{`© ${new Date().getFullYear()} Ewerton Coutinho`}</p>
-            </article>
-        </footer>
+        <>
+            <footer className="footer">
+                <div className="container font-size-medium">
+                    <Touch touch={touch}></Touch>
+                    <Copy></Copy>
+                </div>
+                <Language></Language>
+            </footer>
+        </>
     )
 }
