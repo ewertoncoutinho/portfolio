@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
     return (
-        <Html lang="en" className="notranslate" translate="no">
+        <Html lang="en-US" className="notranslate" translate="no">
             <Head>
                 <link
                     rel="preload"
