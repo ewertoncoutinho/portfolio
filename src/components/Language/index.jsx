@@ -17,24 +17,28 @@ export default function Language(props) {
         <div className="lang">
             <div className="container">
                 <div className="mt-40 mb-80">
-                    <input
-                        className="m-0"
-                        type="radio"
-                        id="english"
-                        onClick={() => {
-                            router.push('/', '/', { locale: 'en-US' })
-                        }}
-                    />
-                    <label htmlFor="english">English</label>
-                    <input
-                        className="ml-20"
-                        type="radio"
-                        id="portugues"
-                        onClick={() => {
-                            router.push('/pt-BR', '/pt-BR', { locale: 'pt-BR' })
-                        }}
-                    />
-                    <label htmlFor="portugues">Português</label>
+                    <label htmlFor="english">
+                        <input
+                            type="radio"
+                            id="english"
+                            onClick={() => {
+                                router.push('/', '/', { locale: 'en-US' })
+                            }}
+                        />
+                        <span>English</span>
+                    </label>
+                    <label htmlFor="portugues">
+                        <input
+                            type="radio"
+                            id="portugues"
+                            onClick={() => {
+                                router.push('/pt-BR', '/pt-BR', {
+                                    locale: 'pt-BR',
+                                })
+                            }}
+                        />
+                        <span>Português</span>
+                    </label>
                 </div>
             </div>
         </div>

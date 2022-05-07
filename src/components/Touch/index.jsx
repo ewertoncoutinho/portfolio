@@ -7,7 +7,7 @@ export default function Touch({ touch }) {
                     <li>
                         <a
                             aria-label="Email"
-                            href="mailto:contato@ewertoncoutinho.com"
+                            href="mailto:ewertoncoutinho@hotmail.com"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -37,7 +37,7 @@ export default function Touch({ touch }) {
                     <li>
                         <a
                             aria-label="Linkedin"
-                            href="https://www.linkedin.com/in/ewertoncoutinho"
+                            href="https://linkedin.com/in/ewertoncoutinho"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
