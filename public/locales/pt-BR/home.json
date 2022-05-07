@@ -1,1 +1,8 @@
-{"about":"Sobre mim","hello":"Olá, sou","touch":"Contatos","works":"Conheça meus trabalhos.","caption":"Devolvedor Full-stack e Designer UX/UI","greeting":"Prazer em conhecê-lo"}
+{
+    "about": "Sobre mim",
+    "caption": "Devolvedor Full-stack e Designer UX/UI",
+    "greeting": "Prazer em conhecê-lo",
+    "hello": "Olá, sou",
+    "touch": "Contatos",
+    "works": "Conheça meus trabalhos."
+}

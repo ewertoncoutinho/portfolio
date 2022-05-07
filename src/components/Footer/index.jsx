@@ -1,7 +1,7 @@
 export default function Footer({ touch }) {
     return (
         <footer className="container contacts font-size-medium">
-            <article className="mx-20">
+            <article>
                 <h1 className="mb-40">{touch}</h1>
                 <nav>
                     <h2 className="font-zero">Contacts</h2>
@@ -13,7 +13,7 @@ export default function Footer({ touch }) {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Email
+                                E-mail
                             </a>
                         </li>
                         <li>
@@ -43,12 +43,12 @@ export default function Footer({ touch }) {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Linkedin
+                                LinkedIn
                             </a>
                         </li>
                     </ul>
                 </nav>
-                <p className="copy color-gray">@ 2021 Ewerton Coutinho</p>
+                <p className="copy color-gray">{`© ${new Date().getFullYear()} Ewerton Coutinho`}</p>
             </article>
         </footer>
     )

@@ -1,1 +1,8 @@
-{"about":"About me","caption":"I'm a UX/UI Designer and Full-stack Developer","greeting":"Nice to meet you","hello":"Hi, I'm","touch":"Get in touch","works":"Meet my works."}
+{
+    "about": "About me",
+    "caption": "Full-stack Developer and UX/UI Designer",
+    "greeting": "Nice to meet you",
+    "hello": "Hi, I'm",
+    "touch": "Get in touch",
+    "works": "Meet my works."
+}

@@ -126,6 +126,9 @@
     margin-bottom: 30px;
     font-size: 1rem;
 }
+.lang {
+    border-top: 1px solid #333;
+}
 
 @media only screen and (min-width: 600px) {
     :root {

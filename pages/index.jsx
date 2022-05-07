@@ -46,7 +46,6 @@ export default function Home() {
             ></CardAbout>
             <Works works={t('home:works')}></Works>
             <Footer touch={t('home:touch')}></Footer>
-            <hr />
             <Language></Language>
         </>
     )
