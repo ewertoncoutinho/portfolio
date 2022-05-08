@@ -11,7 +11,7 @@ export default function Language(props) {
         } else {
             document.getElementById('portugues').checked = true
         }
-    })
+    }, [])
 
     return (
         <div className="lang">
