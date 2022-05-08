@@ -1,11 +1,12 @@
 import Script from 'next/script'
+import * as gtag from '/lib/gtag'
 
 export default function Analytics() {
     return (
         <>
             <Script
-                strategy="lazyOnload"
-                src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+                strategy="afterInteractive"
+                src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
                 onLoad={() =>
                     console.log(
                         `%c                                                               
@@ -22,12 +23,20 @@ export default function Analytics() {
                     )
                 }
             />
-            <Script strategy="lazyOnload">
-                {`window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-                  gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');`}
-            </Script>
+            <Script
+                id="gtag-init"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{
+                    __html: `
+                      window.dataLayer = window.dataLayer || [];
+                      function gtag(){dataLayer.push(arguments);}
+                      gtag('js', new Date());
+                      gtag('config', '${gtag.GA_TRACKING_ID}', {
+                        page_path: window.location.pathname,
+                      });
+                    `,
+                }}
+            />
         </>
     )
 }
