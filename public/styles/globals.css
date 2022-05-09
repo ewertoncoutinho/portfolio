@@ -3,48 +3,48 @@
  *--------------------------------------------------------------*/
 
 :root {
-    --font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, Segoe UI,
-        Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-        sans-serif;
-    --font-size-zero: 0;
-    --font-size-small: 1.25rem;
-    --font-size-medium: 1.75rem;
-    --font-size-large: 2.75rem;
+	--font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, Segoe UI,
+		Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+		sans-serif;
+	--font-size-zero: 0;
+	--font-size-small: 1.25rem;
+	--font-size-medium: 1.75rem;
+	--font-size-large: 2.75rem;
 
-    --color-primary: #ffffff;
-    --color-primary-dark: #000000;
-    --color-secondary-dark: #151516;
-    --color-white: #f1f1f1;
-    --color-gray: #7a7a7a;
+	--color-primary: #ffffff;
+	--color-primary-dark: #000000;
+	--color-secondary-dark: #151516;
+	--color-white: #f1f1f1;
+	--color-gray: #7a7a7a;
 
-    --spacing-xxsmall: 0.625rem; /*10px*/
-    --spacing-xsmall: 0.938rem; /*15px*/
-    --spacing-small: 1.25rem; /*20px*/
-    --spacing-medium: 2.5rem; /*40px*/
-    --spacing-large: 3.125rem;
-    --spacing-xlarge: 4.8rem;
-    --spacing-xxlarge: 10rem;
+	--spacing-xxsmall: 0.625rem; /*10px*/
+	--spacing-xsmall: 0.938rem; /*15px*/
+	--spacing-small: 1.25rem; /*20px*/
+	--spacing-medium: 2.5rem; /*40px*/
+	--spacing-large: 3.125rem;
+	--spacing-xlarge: 4.8rem;
+	--spacing-xxlarge: 10rem;
 
-    --layer-base: 10;
-    --layer-menu: 20;
-    --layer-overlay: 30;
-    --layer-modal: 40;
-    --layer-alwaysOnTop: 50;
+	--layer-base: 10;
+	--layer-menu: 20;
+	--layer-overlay: 30;
+	--layer-modal: 40;
+	--layer-alwaysOnTop: 50;
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-display: swap;
-    src: local(''), url('/fonts/open-sans-600.woff2') format('woff2');
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: local(''), url('/fonts/open-sans-600.woff2') format('woff2');
 }
 @font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: local(''), url('/fonts/open-sans-700.woff2') format('woff2');
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: local(''), url('/fonts/open-sans-700.woff2') format('woff2');
 }
 
 /*
@@ -53,32 +53,32 @@
 
 html,
 body {
-    padding: 0;
-    margin: 0;
-    min-width: 320px;
-    font-family: var(--font-family);
-    background-color: var(--color-primary-dark);
-    color: var(--color-primary);
+	padding: 0;
+	margin: 0;
+	min-width: 320px;
+	font-family: var(--font-family);
+	background-color: var(--color-primary-dark);
+	color: var(--color-primary);
 }
 
 * {
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-    padding-inline-start: 0;
-    list-style: none;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	padding-inline-start: 0;
+	list-style: none;
 }
 
 h1 {
-    font-size: var(--font-size-large);
+	font-size: var(--font-size-large);
 }
 h2 {
-    font-size: var(--font-size-medium);
+	font-size: var(--font-size-medium);
 }
 p {
-    font-size: var(--font-size-small);
-    font-weight: 600;
+	font-size: var(--font-size-small);
+	font-weight: 600;
 }
 
 button,
@@ -87,35 +87,35 @@ input,
 select,
 svg,
 a {
-    color: inherit;
-    text-decoration: none;
-    -webkit-tap-highlight-color: transparent;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+	color: inherit;
+	text-decoration: none;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 /*
  * Colors
  *--------------------------------------------------------------*/
 .color-gray {
-    color: var(--color-gray);
+	color: var(--color-gray);
 }
 /*
  * Font size
  *--------------------------------------------------------------*/
 
 .font-zero {
-    font-size: var(--font-size-zero);
+	font-size: var(--font-size-zero);
 }
 .font-size-medium {
-    font-size: var(--font-size-medium);
+	font-size: var(--font-size-medium);
 }
 .font-size-small {
-    font-size: var(--font-size-small);
-    font-weight: 600;
+	font-size: var(--font-size-small);
+	font-weight: 600;
 }
 
 /*
@@ -123,61 +123,61 @@ a {
  *--------------------------------------------------------------*/
 
 .m-0 {
-    margin: 0;
+	margin: 0;
 }
 .mx-10 {
-    margin: 0 var(--spacing-xxsmall);
+	margin: 0 var(--spacing-xxsmall);
 }
 .mx-15 {
-    margin: 0 var(--spacing-xsmall);
+	margin: 0 var(--spacing-xsmall);
 }
 .mx-20 {
-    margin: 0 var(--spacing-small);
+	margin: 0 var(--spacing-small);
 }
 .mx-40 {
-    margin: 0 var(--spacing-medium);
+	margin: 0 var(--spacing-medium);
 }
 
 .my-10 {
-    margin: var(--spacing-xxsmall) 0;
+	margin: var(--spacing-xxsmall) 0;
 }
 .my-20 {
-    margin: var(--spacing-small) 0;
+	margin: var(--spacing-small) 0;
 }
 .my-40 {
-    margin: var(--spacing-medium) 0;
+	margin: var(--spacing-medium) 0;
 }
 
 .mb-20 {
-    margin-bottom: var(--spacing-small);
+	margin-bottom: var(--spacing-small);
 }
 .mb-40 {
-    margin-bottom: var(--spacing-medium);
+	margin-bottom: var(--spacing-medium);
 }
 .mb-80 {
-    margin-bottom: var(--spacing-xxlarge);
+	margin-bottom: var(--spacing-xxlarge);
 }
 
 .mt-20 {
-    margin-top: var(--spacing-small);
+	margin-top: var(--spacing-small);
 }
 .mt-40 {
-    margin-top: var(--spacing-medium);
+	margin-top: var(--spacing-medium);
 }
 .mt-80 {
-    margin-top: var(--spacing-xxlarge);
+	margin-top: var(--spacing-xxlarge);
 }
 
 .ml-10 {
-    margin-left: var(--spacing-xxsmall);
+	margin-left: var(--spacing-xxsmall);
 }
 .ml-20 {
-    margin-left: var(--spacing-small);
+	margin-left: var(--spacing-small);
 }
 
 .mr-10 {
-    margin-right: var(--spacing-xxsmall);
+	margin-right: var(--spacing-xxsmall);
 }
 .mr-20 {
-    margin-right: var(--spacing-small);
+	margin-right: var(--spacing-small);
 }
