@@ -19,7 +19,10 @@ export default function Home() {
 	const { t } = useTranslation()
 	return (
 		<>
-			<Header discription={t('home:description')} />
+			<Header
+				description={t('home:description')}
+				url="https://ewertoncoutinho.vercel.app"
+			/>
 			<Menu />
 			<Hello
 				greeting={t('home:hello')}

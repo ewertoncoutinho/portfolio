@@ -10,7 +10,7 @@
 		"plop": "plop --plopfile generators/plopfile.js"
 	},
 	"dependencies": {
-		"gsap": "^3.7.1",
+		"gsap": "^3.10.4",
 		"next": "12",
 		"next-i18next": "^11.0.0",
 		"react": "^18.1.0",
