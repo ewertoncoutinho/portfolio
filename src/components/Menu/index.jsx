@@ -2,7 +2,7 @@ export default function Menu() {
 	return (
 		<div className="container">
 			<div className="menu mx-10 my-10">
-				<svg
+				{/* <svg
 					className="icon-menu"
 					width="30"
 					height="14"
@@ -24,7 +24,7 @@ export default function Menu() {
 						stroke="white"
 						strokeWidth="1.5"
 					/>
-				</svg>
+				</svg> */}
 			</div>
 		</div>
 	)
