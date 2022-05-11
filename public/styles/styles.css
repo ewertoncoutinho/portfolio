@@ -102,6 +102,7 @@
 	background-color: var(--color-primary-dark);
 	border-radius: 1rem;
 	margin-bottom: 30px;
+	cursor: pointer;
 }
 .card-work h1 {
 	margin-top: var(--spacing-xlarge);
