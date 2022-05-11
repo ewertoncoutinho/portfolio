@@ -1,15 +1,22 @@
+import Link from 'next/link'
+import Image from 'next/image'
+
 export default function CardWork(props) {
 	return (
 		<article className={['container', 'card-work', props.color].join(' ')}>
-			<h1>Clone Instagram.</h1>
-			<nav>
-				<h2 className="font-zero">Technologies</h2>
-				<ul>
-					<li>React</li>
-					<li>Redux</li>
-				</ul>
-			</nav>
-			<div></div>
+			<Link href="https://shockwave-ewertoncoutinho.vercel.app/">
+				<a target="_blank" rel="noopener" aria-label="Shock Wave">
+					<Image
+						alt="Shock Wave"
+						src="/image/shockwave.png"
+						as="image"
+						layout="fill"
+						objectFit="none"
+						quality={75}
+						priority
+					/>
+				</a>
+			</Link>
 		</article>
 	)
 }
