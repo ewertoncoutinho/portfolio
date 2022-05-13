@@ -7,9 +7,9 @@ export default function Language(props) {
 	useEffect(() => {
 		const location = window.location.pathname
 		if (location == '/') {
-			document.getElementById('english').checked = true
-		} else {
 			document.getElementById('portugues').checked = true
+		} else {
+			document.getElementById('english').checked = true
 		}
 	}, [])
 
@@ -17,27 +17,29 @@ export default function Language(props) {
 		<div className="lang">
 			<div className="container">
 				<div className="mt-40 mb-80">
-					<label htmlFor="english">
-						<input
-							type="radio"
-							id="english"
-							onClick={() => {
-								router.push('/', '/', { locale: 'en-US' })
-							}}
-						/>
-						<span>English</span>
-					</label>
 					<label htmlFor="portugues">
 						<input
 							type="radio"
 							id="portugues"
 							onClick={() => {
-								router.push('/pt-BR', '/pt-BR', {
+								router.push('/', '/', {
 									locale: 'pt-BR',
 								})
 							}}
 						/>
 						<span>Português</span>
+					</label>
+					<label htmlFor="english">
+						<input
+							type="radio"
+							id="english"
+							onClick={() => {
+								router.push('/en-US', '/en-US', {
+									locale: 'en-US',
+								})
+							}}
+						/>
+						<span>English</span>
 					</label>
 				</div>
 			</div>

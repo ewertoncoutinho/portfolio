@@ -8,8 +8,8 @@ export default function Hello({
 		<div className="container">
 			<div className="presentation">
 				<h1 className="m-0">
-					<div>{greeting}&nbsp;</div>
-					<div>{name}</div>
+					<span>{greeting}&nbsp;</span>
+					<span>{name}</span>
 				</h1>
 				<section>
 					<h2 className="mt-20 font-size-small color-gray">
@@ -22,7 +22,7 @@ export default function Hello({
 						<li>
 							<a
 								aria-label="Linkedin"
-								href="https://www.linkedin.com/in/ewertoncoutinho"
+								href="https://linkedin.com/in/ewertoncoutinho"
 								target="_blank"
 								rel="noopener noreferrer"
 							>

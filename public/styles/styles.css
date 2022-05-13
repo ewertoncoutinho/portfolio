@@ -28,6 +28,9 @@
 	width: 20rem;
 	padding: 0 22px;
 }
+.presentation h1 span{
+	display: block;
+}
 .my-social ul {
 	display: flex;
 }

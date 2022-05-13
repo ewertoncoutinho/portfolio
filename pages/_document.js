@@ -5,18 +5,18 @@ export default function Document() {
 		<Html lang="en-US" prefix="og: https://ogp.me/ns#">
 			<Head>
 				<link
-					rel="preload"
+					rel="preconnect"
 					href="/fonts/open-sans-600.woff2"
 					as="font"
-					crossOrigin=""
 					type="font/woff2"
+					crossOrigin="true"
 				/>
 				<link
-					rel="preload"
+					rel="preconnect"
 					href="/fonts/open-sans-700.woff2"
 					as="font"
-					crossOrigin=""
 					type="font/woff2"
+					crossOrigin="true"
 				/>
 			</Head>
 			<body>
