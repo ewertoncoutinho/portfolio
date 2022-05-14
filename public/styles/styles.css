@@ -67,6 +67,7 @@
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
+	max-width: 250px;
 }
 .icon-arrow {
 	margin: 0.15rem 0 0 0.55rem;
@@ -83,10 +84,6 @@
 }
 .about-me--text:hover .icon-arrow {
 	margin-left: 0.825rem;
-}
-.about{
-	width: 100%;
-	height: 100%;
 }
 
 /*
@@ -109,15 +106,18 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	border-radius: 1rem;
 	width: 100%;
 	max-width: 980px;
 	height: 460px;
 	background-color: var(--color-primary-dark);
-	border-radius: 1rem;
 	margin-bottom: 30px;
 	cursor: pointer;
 	opacity: 0.5;
 	transition: 0.3s ease;
+}
+.card-work span img{
+	border-radius: 1rem;
 }
 .card-work:hover{
 	opacity: 1;
@@ -199,5 +199,8 @@
 	}
 	.card-about header {
 		width: 13rem;
+	}
+	.icon-arrow {
+		margin: 0.4rem 0 0 0.55rem;
 	}
 }

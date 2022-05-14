@@ -1,14 +1,13 @@
-import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 export default function About() {
+	const router = useRouter()
 	return (
 		<div className="about">
 			<div className="container">
 				<h1>About</h1>
-				<p className="font-size-small">building...</p>
-				<Link href="/">
-					<a>voltar</a>
-				</Link>
+				<p className="font-size-small">Building...</p>
+				<button onClick={() => router.push('/')}>back</button>
 			</div>
 		</div>
 	)
