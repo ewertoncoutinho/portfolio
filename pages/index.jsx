@@ -6,32 +6,35 @@ import Menu from '/src/components/Menu'
 import Works from '../src/components/Works'
 import Footer from '../src/components/Footer'
 import Header from '../src/components/Header'
+import About from '../src/components/About'
 
-export async function getStaticProps({ locale }) {
-	return {
-		props: {
-			...(await serverSideTranslations(locale, ['home'])),
-		},
-	}
-}
+export const getStaticProps = async ({ locale }) => ({
+	props: {
+		...(await serverSideTranslations(locale, ['common'])),
+	},
+})
 
 export default function Home() {
 	const { t } = useTranslation()
 	return (
 		<>
 			<Header
-				description={t('home:description')}
+				description={t('common:description')}
 				url="https://ewertoncoutinho.vercel.app"
 			/>
 			<Menu />
 			<Hello
-				greeting={t('home:hello')}
+				greeting={t('common:hello')}
 				name="Ewerton"
-				caption={t('home:caption')}
+				caption={t('common:caption')}
 			/>
-			<CardAbout greeting={t('home:greeting')} about={t('home:about')} />
-			<Works works={t('home:works')} />
-			<Footer touch={t('home:touch')} />
+			<About></About>
+			<CardAbout
+				greeting={t('common:greeting')}
+				about={t('common:about')}
+			/>
+			<Works works={t('common:works')} />
+			<Footer touch={t('common:touch')} />
 		</>
 	)
 }
