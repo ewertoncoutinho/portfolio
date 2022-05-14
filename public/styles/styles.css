@@ -3,6 +3,9 @@
 	width: 90.34%;
 	margin: 0 auto;
 }
+.center{
+	text-align: center;
+}
 
 /*
     menu
@@ -33,6 +36,7 @@
 }
 .my-social ul {
 	display: flex;
+	margin: 0;
 }
 .social {
 	transition: fill 0.3s ease;
@@ -73,24 +77,16 @@
 .about-me--text h2 {
 	transition: color 0.2s linear;
 }
-.about-me--text:hover .icon-arrow {
-	fill: #a7a7a7;
-	color: #a7a7a7;
+.about-me--text:hover, .about-me--text:hover .icon-arrow {
+	fill: #fff;
+	color: #fff;
 }
 .about-me--text:hover .icon-arrow {
 	margin-left: 0.825rem;
 }
 .about{
-	position: fixed;
-	left: 0;
-	top: 0;
 	width: 100%;
 	height: 100%;
-	padding: 10%;
-	background-color: var(--color-primary-dark);
-	z-index: var(--layer-modal);
-	pointer-events: none;
-	opacity: 0;
 }
 
 /*
@@ -109,11 +105,12 @@
 	margin-top: var(--spacing-xxlarge);
 }
 .card-work {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	position: relative;
-	width: 83.7%;
+	width: 100%;
+	max-width: 980px;
 	height: 460px;
 	background-color: var(--color-primary-dark);
 	border-radius: 1rem;
@@ -144,6 +141,8 @@
 	margin: var(--spacing-small) 0;
 }
 .touch a {
+	font-size: var(--font-size-medium);
+	color: #fff;
 	transition: 0.3s ease;
 }
 

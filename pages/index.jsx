@@ -28,7 +28,6 @@ export default function Home() {
 				name="Ewerton"
 				caption={t('common:caption')}
 			/>
-			<About></About>
 			<CardAbout
 				greeting={t('common:greeting')}
 				about={t('common:about')}

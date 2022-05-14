@@ -6,7 +6,7 @@ export default function Footer({ touch }) {
 	return (
 		<>
 			<footer className="footer">
-				<div className="container font-size-medium">
+				<div className="container">
 					<Touch touch={touch}></Touch>
 					<Copy></Copy>
 				</div>
