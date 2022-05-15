@@ -11,7 +11,11 @@ export default function Works({ works }) {
 					img="/image/shockwave.png"
 				></CardWork>
 				<Link href="https://github.com/ewertoncoutinho?tab=repositories">
-					<a target="_blank" rel="noopener noreferrer">
+					<a
+						className="github-works"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						Repositories in GitHub
 					</a>
 				</Link>

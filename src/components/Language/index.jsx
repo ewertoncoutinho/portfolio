@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useRouter } from 'next/router'
 
-export default function Language(props) {
+export default function Language() {
 	const router = useRouter()
 
 	useEffect(() => {

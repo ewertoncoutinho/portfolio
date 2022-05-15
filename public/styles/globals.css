@@ -43,7 +43,7 @@
 	font-family: 'Open Sans';
 	font-style: normal;
 	font-weight: 600;
-	font-display: optional;
+	font-display: swap;
 	src: local(''), url('/fonts/open-sans-600.woff2') format('woff2');
 	unicode-range: U+0020-007E;
 }
@@ -103,7 +103,7 @@ a {
 	transition: 0.3s ease;
 }
 button:hover, a:hover{
-	color: #fff;
+	color: var(--color-primary);
 }
 /* width */
 ::-webkit-scrollbar {

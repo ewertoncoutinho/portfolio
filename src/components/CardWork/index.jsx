@@ -17,7 +17,6 @@ export default function CardWork({ url, img, color = '#000' }) {
 							layout="fill"
 							objectFit="contain"
 							quality={100}
-							priority
 						/>
 					</article>
 				</a>
