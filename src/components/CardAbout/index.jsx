@@ -5,11 +5,11 @@ export default function CardAbout({ greeting, about }) {
 	return (
 		<div className="container">
 			<div className="card-about">
-				<header>
+				<header className="mt-20">
 					<h2>{greeting}</h2>
 				</header>
 				<button
-					className="about-me--text"
+					className="about-me--text mb-20"
 					onClick={() => router.push('/about')}
 				>
 					<h2>{about}</h2>

@@ -7,16 +7,14 @@ export default function Hello({
 	return (
 		<div className="container">
 			<div className="presentation">
-				<h1 className="m-0">
+				<h1>
 					<span>{greeting}&nbsp;</span>
 					<span>{name}</span>
 				</h1>
-				<section>
-					<h2 className="mt-20 font-size-small color-gray">
-						{caption}
-					</h2>
+				<section className="my-20 caption">
+					<h2>{caption}</h2>
 				</section>
-				<nav className="my-social mt-50">
+				<nav className="my-social">
 					<ul>
 						<li>
 							<a
@@ -27,8 +25,8 @@ export default function Hello({
 							>
 								<svg
 									className="social"
-									width="25"
-									height="25"
+									width="27"
+									height="27"
 									viewBox="0 0 25 25"
 									fill={colorIcon}
 									xmlns="http://www.w3.org/2000/svg"
@@ -51,8 +49,8 @@ export default function Hello({
 							>
 								<svg
 									className="social"
-									width="25"
-									height="25"
+									width="27"
+									height="27"
 									viewBox="0 0 25 25"
 									fill={colorIcon}
 									xmlns="http://www.w3.org/2000/svg"
@@ -74,8 +72,8 @@ export default function Hello({
 							>
 								<svg
 									className="social"
-									width="25"
-									height="25"
+									width="27"
+									height="27"
 									viewBox="0 0 25 20"
 									fill={colorIcon}
 									xmlns="http://www.w3.org/2000/svg"

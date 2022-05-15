@@ -3,9 +3,6 @@
  *--------------------------------------------------------------*/
 
 :root {
-	--font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, Segoe UI,
-		Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-		sans-serif;
 	--font-size-small: 1.25rem;
 	--font-size-medium: 1.75rem;
 	--font-size-large: 2.75rem;
@@ -21,7 +18,7 @@
 	--spacing-small: 1.25rem; /*20px*/
 	--spacing-medium: 2.5rem; /*40px*/
 	--spacing-large: 3.125rem;
-	--spacing-xlarge: 4.8rem;
+	--spacing-xlarge: 4.375rem;
 	--spacing-xxlarge: 10rem;
 
 	--layer-base: 10;
@@ -37,62 +34,180 @@
 	font-weight: 700;
 	font-display: swap;
 	src: local(''), url('/fonts/open-sans-700.woff2') format('woff2');
-	unicode-range: U+0020-007E;
+	unicode-range: U+0000 - U+007F;
 }
+
 @font-face {
 	font-family: 'Open Sans';
 	font-style: normal;
 	font-weight: 600;
 	font-display: swap;
 	src: local(''), url('/fonts/open-sans-600.woff2') format('woff2');
-	unicode-range: U+0020-007E;
+	unicode-range: U+0000 - U+007F;
 }
 
 /*
  * Reset
  *--------------------------------------------------------------*/
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
 html,
-body {
-	padding: 0;
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
-	min-width: 320px;
-	font-family: var(--font-family);
-	background-color: var(--color-primary-dark);
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, Segoe UI,
+		Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+		sans-serif;
 	color: var(--color-primary);
 }
 
-* {
-	box-sizing: border-box;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-	padding-inline-start: 0;
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	background-color: var(--color-primary-dark);
+	line-height: 1.4;
+}
+
+ol,
+ul {
 	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 h1 {
 	font-size: var(--font-size-large);
-}
-h2 {
-	font-size: var(--font-size-medium);
-}
-p {
-	font-size: var(--font-size-small);
-	font-weight: 600;
+	font-weight: 700;
 }
 
-button,
-textarea,
-input,
-select,
-svg,
-a {
-	color: var(--color-gray);
-	background: inherit;
-	cursor: pointer;
-	border: none;
+h2 {
+	font-size: var(--font-size-medium);
+	font-weight: 700;
+}
+
+p {
 	font-size: var(--font-size-small);
+}
+
+a {
+	font-size: var(--font-size-small);
+	color: var(--color-gray);
 	text-decoration: none;
 	-webkit-tap-highlight-color: transparent;
 	-webkit-user-select: none;
@@ -102,58 +217,42 @@ a {
 	user-select: none;
 	transition: 0.3s ease;
 }
-button:hover, a:hover{
+
+a:hover {
 	color: var(--color-primary);
 }
+
 /* width */
 ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
+	width: 8px;
+	height: 8px;
 }
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #555555;
-    border-radius: 10px;
+	background: #555555;
+	border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #878787;
-}
-/*
- * Colors
- *--------------------------------------------------------------*/
-.color-gray {
-	color: var(--color-gray);
-}
-/*
- * Font size
- *--------------------------------------------------------------*/
-
-.font-size-medium {
-	font-size: var(--font-size-medium);
-}
-.font-size-small {
-	font-size: var(--font-size-small);
-	font-weight: 600;
+	background: #878787;
 }
 
-/*
- * Spacing margin
- *--------------------------------------------------------------*/
+/* Spacing margin */
 
-.m-0 {
-	margin: 0;
-}
 .mx-10 {
 	margin: 0 var(--spacing-xxsmall);
 }
+
 .mx-15 {
 	margin: 0 var(--spacing-xsmall);
 }
+
 .mx-20 {
 	margin: 0 var(--spacing-small);
 }
+
 .mx-40 {
 	margin: 0 var(--spacing-medium);
 }
@@ -161,9 +260,11 @@ button:hover, a:hover{
 .my-10 {
 	margin: var(--spacing-xxsmall) 0;
 }
+
 .my-20 {
 	margin: var(--spacing-small) 0;
 }
+
 .my-40 {
 	margin: var(--spacing-medium) 0;
 }
@@ -171,9 +272,11 @@ button:hover, a:hover{
 .mb-20 {
 	margin-bottom: var(--spacing-small);
 }
+
 .mb-40 {
 	margin-bottom: var(--spacing-medium);
 }
+
 .mb-80 {
 	margin-bottom: var(--spacing-xxlarge);
 }
@@ -181,9 +284,11 @@ button:hover, a:hover{
 .mt-20 {
 	margin-top: var(--spacing-small);
 }
+
 .mt-40 {
 	margin-top: var(--spacing-medium);
 }
+
 .mt-80 {
 	margin-top: var(--spacing-xxlarge);
 }
@@ -191,6 +296,7 @@ button:hover, a:hover{
 .ml-10 {
 	margin-left: var(--spacing-xxsmall);
 }
+
 .ml-20 {
 	margin-left: var(--spacing-small);
 }
@@ -198,6 +304,7 @@ button:hover, a:hover{
 .mr-10 {
 	margin-right: var(--spacing-xxsmall);
 }
+
 .mr-20 {
 	margin-right: var(--spacing-small);
 }

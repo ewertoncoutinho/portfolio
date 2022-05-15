@@ -3,7 +3,7 @@
 	width: 90.34%;
 	margin: 0 auto;
 }
-.center{
+.center {
 	text-align: center;
 }
 
@@ -27,16 +27,20 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	height: 70vh;
-	width: 20rem;
+	height: 65vh;
+	width: 16rem;
 	padding: 0 22px;
 }
-.presentation h1 span{
+.presentation > h1 > span {
 	display: block;
 }
-.my-social ul {
+.caption > h2 {
+	font-size: var(--font-size-small);
+	font-weight: 600;
+	color: var(--color-gray);
+}
+.my-social > ul {
 	display: flex;
-	margin: 0;
 }
 .social {
 	transition: fill 0.3s ease;
@@ -57,32 +61,35 @@
 	border-radius: 0.25rem;
 	height: 20rem;
 }
-.card-about header {
+.card-about > header {
 	width: 10rem;
 }
 .about-me--text {
 	display: flex;
 	align-items: center;
-	color: var(--color-gray);
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
 	max-width: 250px;
 }
-.icon-arrow {
-	margin: 0.15rem 0 0 0.55rem;
+.about-me--text > h2 {
+	color: var(--color-gray);
 }
-.about-me--text svg {
+.icon-arrow {
+	margin: 0.4rem 0 0 0.55rem;
+}
+.about-me--text > svg {
 	transition: all 0.2s linear;
 }
-.about-me--text h2 {
+.about-me--text > h2 {
 	transition: color 0.2s linear;
 }
-.about-me--text:hover, .about-me--text:hover .icon-arrow {
+.about-me--text:hover > h2,
+.about-me--text:hover > .icon-arrow {
 	fill: #fff;
 	color: #fff;
 }
-.about-me--text:hover .icon-arrow {
+.about-me--text:hover > .icon-arrow {
 	margin-left: 0.825rem;
 }
 
@@ -93,15 +100,14 @@
 	display: flex;
 	flex-direction: column;
 	background-color: var(--color-secondary-dark);
-	margin-top: 60px;
-	padding-bottom: 60px;
+	margin-top: var(--spacing-xlarge);
+	padding-bottom: var(--spacing-xlarge);
 }
 .my-works--text {
-	text-align: center;
 	color: var(--color-white);
 	margin-top: var(--spacing-xxlarge);
 }
-.github-works{
+.github-works {
 	font-size: var(--font-size-small);
 	color: #9c9c9c;
 }
@@ -120,10 +126,10 @@
 	opacity: 0.5;
 	transition: 0.3s ease;
 }
-.card-work span img{
+.card-work span img {
 	border-radius: 1rem;
 }
-.card-work:hover{
+.card-work:hover {
 	opacity: 1;
 }
 .card-work h1 {
@@ -156,7 +162,8 @@
 
 .copy {
 	margin-top: var(--spacing-large);
-	margin-bottom: 30px;
+	color: var(--color-gray);
+	margin-bottom: var(--spacing-medium);
 	font-size: 1rem;
 }
 .lang {
@@ -164,13 +171,14 @@
 }
 .lang label {
 	cursor: pointer;
-	margin-right: 15px;
+	display: inline-flex;
+	align-items: center;
+	margin-right: var(--spacing-xsmall);
 }
 .lang input {
 	background: none;
 	appearance: none;
 	margin: 0;
-	vertical-align: middle;
 	width: 17px;
 	height: 17px;
 	border-radius: 10px;
@@ -188,18 +196,15 @@
 @media only screen and (min-width: 600px) {
 	:root {
 		--font-size-small: calc(1.25rem + 20%);
-	}
-	h1 {
-		font-size: calc(var(--font-size-large) + 50%);
-	}
-	h2 {
-		font-size: calc(var(--font-size-medium) + 50%);
+		--font-size-medium: calc(1.75rem + 50%);
+		--font-size-large: calc(2.75rem + 50%);
 	}
 	.presentation {
-		width: calc(23rem);
+		height: 70vh;
+		width: 18rem;
 	}
 	.card-about {
-		height: calc(20.75rem + 10rem);
+		height: 32rem;
 	}
 	.card-about header {
 		width: 13rem;
